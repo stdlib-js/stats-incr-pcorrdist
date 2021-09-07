@@ -140,6 +140,24 @@ console.log( accumulator() );
 
 <!-- /.examples -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/stats/incr/covariance`][@stdlib/stats/incr/covariance]: compute an unbiased sample covariance incrementally.
+-   [`@stdlib/stats/incr/pcorr`][@stdlib/stats/incr/pcorr]: compute a sample Pearson product-moment correlation coefficient.
+-   [`@stdlib/stats/incr/summary`][@stdlib/stats/incr/summary]: compute a statistical summary incrementally.
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
 
 <section class="main-repo" >
 
@@ -196,6 +214,16 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/stats-incr-pcorrdist/main/LICENSE
 
 [pearson-correlation]: https://en.wikipedia.org/wiki/Pearson_correlation_coefficient
+
+<!-- <related-links> -->
+
+[@stdlib/stats/incr/covariance]: https://github.com/stdlib-js/stats-incr-covariance
+
+[@stdlib/stats/incr/pcorr]: https://github.com/stdlib-js/stats-incr-pcorr
+
+[@stdlib/stats/incr/summary]: https://github.com/stdlib-js/stats-incr-summary
+
+<!-- </related-links> -->
 
 </section>
 
