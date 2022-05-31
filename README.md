@@ -43,30 +43,32 @@ where `r` is the [sample Pearson product-moment correlation coefficient][pearson
 
 <!-- /.intro -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/stats-incr-pcorrdist
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var incrpcorrdist = require( '@stdlib/stats-incr-pcorrdist' );
+incrpcorrdist = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-pcorrdist@umd/browser.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-pcorrdist@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.incrpcorrdist;
+})();
+</script>
 ```
 
 #### incrpcorrdist( \[mx, my] )
@@ -123,9 +125,14 @@ d = accumulator();
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var randu = require( '@stdlib/random-base-randu' );
-var incrpcorrdist = require( '@stdlib/stats-incr-pcorrdist' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-pcorrdist@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var accumulator;
 var x;
@@ -142,6 +149,11 @@ for ( i = 0; i < 100; i++ ) {
     accumulator( x, y );
 }
 console.log( accumulator() );
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -237,11 +249,11 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/incr/covariance]: https://github.com/stdlib-js/stats-incr-covariance
+[@stdlib/stats/incr/covariance]: https://github.com/stdlib-js/stats-incr-covariance/tree/umd
 
-[@stdlib/stats/incr/pcorr]: https://github.com/stdlib-js/stats-incr-pcorr
+[@stdlib/stats/incr/pcorr]: https://github.com/stdlib-js/stats-incr-pcorr/tree/umd
 
-[@stdlib/stats/incr/summary]: https://github.com/stdlib-js/stats-incr-summary
+[@stdlib/stats/incr/summary]: https://github.com/stdlib-js/stats-incr-summary/tree/umd
 
 <!-- </related-links> -->
 
