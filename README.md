@@ -30,10 +30,14 @@ The [sample Pearson product-moment correlation distance][pearson-correlation] is
 
 <!-- <equation class="equation" label="eq:pearson_distance" align="center" raw="d_{x,y} = 1 - r_{x,y} = 1 - \frac{\operatorname{cov_n(x,y)}}{\sigma_x \sigma_y}" alt="Equation for the Pearson product-moment correlation distance."> -->
 
-<div class="equation" align="center" data-raw-text="d_{x,y} = 1 - r_{x,y} = 1 - \frac{\operatorname{cov_n(x,y)}}{\sigma_x \sigma_y}" data-equation="eq:pearson_distance">
+```math
+d_{x,y} = 1 - r_{x,y} = 1 - \frac{\operatorname{cov_n(x,y)}}{\sigma_x \sigma_y}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="d_{x,y} = 1 - r_{x,y} = 1 - \frac{\operatorname{cov_n(x,y)}}{\sigma_x \sigma_y}" data-equation="eq:pearson_distance">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/incr/pcorrdist/docs/img/equation_pearson_distance.svg" alt="Equation for the Pearson product-moment correlation distance.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -43,14 +47,30 @@ where `r` is the [sample Pearson product-moment correlation coefficient][pearson
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-incr-pcorrdist
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import incrpcorrdist from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-pcorrdist@esm/index.mjs';
+var incrpcorrdist = require( '@stdlib/stats-incr-pcorrdist' );
 ```
 
 #### incrpcorrdist( \[mx, my] )
@@ -107,14 +127,9 @@ d = accumulator();
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import incrpcorrdist from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-pcorrdist@esm/index.mjs';
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var incrpcorrdist = require( '@stdlib/stats-incr-pcorrdist' );
 
 var accumulator;
 var x;
@@ -131,10 +146,6 @@ for ( i = 0; i < 100; i++ ) {
     accumulator( x, y );
 }
 console.log( accumulator() );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -166,7 +177,7 @@ console.log( accumulator() );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -210,7 +221,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -230,11 +241,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/incr/covariance]: https://github.com/stdlib-js/stats-incr-covariance/tree/esm
+[@stdlib/stats/incr/covariance]: https://github.com/stdlib-js/stats-incr-covariance
 
-[@stdlib/stats/incr/pcorr]: https://github.com/stdlib-js/stats-incr-pcorr/tree/esm
+[@stdlib/stats/incr/pcorr]: https://github.com/stdlib-js/stats-incr-pcorr
 
-[@stdlib/stats/incr/summary]: https://github.com/stdlib-js/stats-incr-summary/tree/esm
+[@stdlib/stats/incr/summary]: https://github.com/stdlib-js/stats-incr-summary
 
 <!-- </related-links> -->
 
