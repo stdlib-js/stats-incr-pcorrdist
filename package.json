@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/stats-incr-pcorrdist",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Compute a sample Pearson product-moment correlation distance.",
   "license": "Apache-2.0",
   "author": {
@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "@stdlib/assert-is-number": "^0.1.1",
-    "@stdlib/stats-incr-pcorr": "^0.1.0",
+    "@stdlib/stats-incr-pcorr": "^0.1.1",
     "@stdlib/string-format": "^0.1.1",
     "@stdlib/types": "^0.1.0"
   },
