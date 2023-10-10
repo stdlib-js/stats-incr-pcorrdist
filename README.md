@@ -65,7 +65,7 @@ where `r` is the [sample Pearson product-moment correlation coefficient][pearson
 ## Usage
 
 ```javascript
-import incrpcorrdist from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-pcorrdist@deno/mod.js';
+import incrpcorrdist from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-pcorrdist@v0.1.1-deno/mod.js';
 ```
 
 #### incrpcorrdist( \[mx, my] )
@@ -124,7 +124,7 @@ d = accumulator();
 
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import incrpcorrdist from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-pcorrdist@deno/mod.js';
+import incrpcorrdist from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-pcorrdist@v0.1.1-deno/mod.js';
 
 var accumulator;
 var x;
