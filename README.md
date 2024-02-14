@@ -65,6 +65,11 @@ where `r` is the [sample Pearson product-moment correlation coefficient][pearson
 ## Usage
 
 ```javascript
+import incrpcorrdist from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-pcorrdist@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/stats-incr-pcorrdist/tags). For example,
+
+```javascript
 import incrpcorrdist from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-pcorrdist@v0.2.0-deno/mod.js';
 ```
 
@@ -124,7 +129,7 @@ d = accumulator();
 
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import incrpcorrdist from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-pcorrdist@v0.2.0-deno/mod.js';
+import incrpcorrdist from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-pcorrdist@deno/mod.js';
 
 var accumulator;
 var x;
